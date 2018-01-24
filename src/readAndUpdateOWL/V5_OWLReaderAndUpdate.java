@@ -25,7 +25,7 @@ import org.apache.jena.update.UpdateProcessor;
  * @author Jennifer Tran, Vanessa Keller, Di Cui, Aaron Humm, Finia Igel.
  * 
  */
-public class V5_OWLReaderAndUpdater {	
+public class V5_OWLReaderAndUpdate {	
 	/**
 	 * Programmeinstieg.<br>
 	 * Abhaengig von dem ersten Argument wird: <br>
