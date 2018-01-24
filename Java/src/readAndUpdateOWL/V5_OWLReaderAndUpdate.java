@@ -47,7 +47,7 @@ public class V5_OWLReaderAndUpdate {
 	 * 4. ServerPath (Pfad zum Server).
 	 */
 	public static void main(String[] args) {
-		if(args.length <= 3){
+		if(args.length < 3){
 			System.out.println("wrong arguments");
 			return;
 		}
