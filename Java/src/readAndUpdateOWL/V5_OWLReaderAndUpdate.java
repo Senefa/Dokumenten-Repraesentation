@@ -24,21 +24,19 @@ public class V5_OWLReaderAndUpdate {
 	 * Programmeinstieg.<br>
 	 * Abhaengig von dem ersten Argument wird: <br>
 	 * args[0] == "-query":<br>
-	 * 	<ol>	Das Ergebnis auf die in args[2] angegebene Abfrage 
-	 * 		der in args[1] angegebenen Ontologie ausgegeben. </ol> 
+	 * 	<ol>	Das Ergebnis auf die in args[1] angegebene Abfrage 
+	 * 		der in args[2] angegebenen Ontologie ausgegeben. </ol> 
 	 * 	<ol> Siehe: {@link #printQuery(String pOWLPath, String pSPARQLPath)} </ol>
 	 * 
 	 * args[0] == "-update":<br>
-	 * 	<ol>	Die Ontologie (args[1]) um weitere Instanzen 
-	 * 		aus dem Statement (args[2]) auf den Server (args[3]) 
-	 * 		erweitert.</ol>
+	 * 	<ol>	Die Ontologie um weitere Instanzen aus dem 
+	 * 		Statement (args[1]) auf den Server (args[2]) erweitert.</ol>
 	 * <ol> Siehe: {@link #updateOWL(String pOWLPath, String pSPARQLPath, String pServerURL)} </ol>
 	 * 
-	 * @param args Mindestens drei Kommandozeilenparameter:<br>
+	 * @param args Exact drei Kommandozeilenparameter:<br>
 	 * 1. Flag ("-query" oder "-update"), <br>
-	 * 2. OWLPath  (Pfad zur Ontologie in XML Format), <br>
-	 * 3. SPARQLPath (Pfad zur SPARQL-Abfrage in ASCII Format),<br>
-	 * 4. ServerPath (Pfad zum Server).
+	 * 2. SPARQLPath (Pfad zur SPARQL-Abfrage in ASCII Format),<br>
+	 * 3. ServerPath (Pfad zum Server).
 	 */
 	public static void main(String[] args) {
 		if(args.length < 3){
@@ -46,9 +44,9 @@ public class V5_OWLReaderAndUpdate {
 			return;
 		}
 		switch (args[0]) {
-			case "-query": printQuery(args[2], args[3]);
+			case "-query": printQuery(args[1], args[2]);
 				break;
-			case "-update": updateOWL(args[1], args[2], args[3]);
+			case "-update": updateOWL(args[1], args[2]);
 				break;
 		}
 		
@@ -156,7 +154,7 @@ public class V5_OWLReaderAndUpdate {
 	 * @param pSPARQLPath Pfad zur SPARQL-Statement in ASCII Format.
 	 * @param pServerURL URL zum Server.
 	 */
-	public static void updateOWL(String pOWLPath, String pSPARQLPath, String pServerURL) {
+	public static void updateOWL(String pSPARQLPath, String pServerURL) {
 		System.out.println("Methode Update");
 		String stringBuilder = readFile(pSPARQLPath);
 		System.out.println(stringBuilder);
