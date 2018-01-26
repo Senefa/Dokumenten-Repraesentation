@@ -97,6 +97,7 @@ public class V5_OWLReaderAndUpdate {
 		} 
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(pServerURL , sQuery);
 		ResultSet resultSet = queryExecution.execSelect();
+		System.out.println(resultSet);
 		System.out.println("Ergebnis:");
 		while (resultSet.hasNext() == true) {
 			QuerySolution querySolution = resultSet.nextSolution();
@@ -157,14 +158,12 @@ public class V5_OWLReaderAndUpdate {
 	public static void updateOWL(String pSPARQLPath, String pServerURL) {
 		System.out.println("Methode Update");
 		String stringBuilder = readFile(pSPARQLPath);
-		System.out.println(stringBuilder);
 		try {
-			String randomID = UUID.randomUUID().toString();
 			UpdateProcessor updateProcessor = UpdateExecutionFactory
-					.createRemote(UpdateFactory.create(String.format(
-							stringBuilder, randomID)),
-							pServerURL
-							);
+			.createRemote(UpdateFactory.create(String.format(
+					stringBuilder)),
+					pServerURL
+					);
 			updateProcessor.execute();
 			System.out.println("OWL updated");
 		} catch (Exception e) {
