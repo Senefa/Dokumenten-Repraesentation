@@ -46,7 +46,7 @@ public class V5_OWLReaderAndUpdate {
 			return;
 		}
 		switch (args[0]) {
-			case "-query": printQuery(args[2]);
+			case "-query": printQuery(args[2], args[3]);
 				break;
 			case "-update": updateOWL(args[1], args[2], args[3]);
 				break;
@@ -91,17 +91,14 @@ public class V5_OWLReaderAndUpdate {
 	 * 
 	 * @param pSPARQLPath  Pfad zur SPARQL-Abfrage in ASCII Format.
 	 */
-	public static void printQuery(String pSPARQLPath) {
+	public static void printQuery(String pSPARQLPath, String pServerURL) {
 		System.out.println("Methode Query");
 		String sQuery = readFile(pSPARQLPath);
 		if (sQuery.equals("")) {
 			return;
 		} 
-		QueryExecution queryExecution = QueryExecutionFactory.sparqlService("http://localhost:3030/ds/query" , sQuery);
+		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(pServerURL , sQuery);
 		ResultSet resultSet = queryExecution.execSelect();
-		System.out.println(resultSet.getResultVars());
-		//ResultSetFormatter.out(rSet);
-		//ResultSetFormatter.outputAsXML(rSet);
 		System.out.println("Ergebnis:");
 		while (resultSet.hasNext() == true) {
 			QuerySolution querySolution = resultSet.nextSolution();
