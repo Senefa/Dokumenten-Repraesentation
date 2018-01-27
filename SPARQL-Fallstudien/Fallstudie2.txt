@@ -1,0 +1,15 @@
+PREFIX foaf: <http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?Dokument
+	WHERE { 
+?Dokument foaf:DokumentWirdBearbeitetVonPerson ?Person.
+?Person foaf:persNachname ?persNachname .
+?Dokument foaf:dokuName ?dokuName .
+?Dokument foaf:dokuAenderungsdatum ?dokuAenderungsdatum .
+FILTER regex( str(?persNachname), 'Cui' ) 
+FILTER regex( str(?dokuAenderungsdatum), '2017-01-2' ) 
+}
+
