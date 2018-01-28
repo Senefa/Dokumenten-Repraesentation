@@ -98,6 +98,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#PersonGehoertZuVerwendung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#PersonGehoertZuVerwendung">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#VerwendungHatPerson"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#PersonIstTaetigFuerProjekt -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#PersonIstTaetigFuerProjekt">
@@ -179,6 +189,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#VerwendungHatDokument">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Dokument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#VerwendungHatPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#VerwendungHatPerson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person"/>
     </owl:ObjectProperty>
     
 
@@ -422,9 +441,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#verwZeit -->
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#verwZeitpunkt -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#verwZeit">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#verwZeitpunkt">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -1015,6 +1034,8 @@
         <PersonNimmtTeilAnTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech2"/>
         <PersonNimmtTeilAnTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech3"/>
         <persGeschlecht rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weiblich</persGeschlecht>
+        <persNachname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meier</persNachname>
+        <persVorname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lisa</persVorname>
     </owl:NamedIndividual>
     
 
