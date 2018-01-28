@@ -3,13 +3,14 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?dokuName
+SELECT *
 	WHERE { 
-?Dokument foaf:DokumentWirdBearbeitetVonPerson ?Person.
-?Person foaf:persNachname ?persNachname .
+?Dokument foaf:DokumentGehoertZuVerwendung ?Verwendung.
+?Verwendung foaf:VerwendungHatPerson ?persNachname .
+?Verwendung foaf:verwZeitpunkt ?verwZeitpunkt .
 ?Dokument foaf:dokuName ?dokuName .
 ?Dokument foaf:dokuAenderungsdatum ?dokuAenderungsdatum .
-FILTER regex( str(?persNachname), 'Cui' ) 
-FILTER regex( str(?dokuAenderungsdatum), '2017-01-2' ) 
+OPTIONAL {FILTER regex( str(?persNachname), 'Meier' ) }
+OPTIONAL {FILTER regex( str(?persNachname), 'Sato' ) }
+FILTER regex( str(?verwZeitpunkt), '2018-01-24' ) 
 }
-

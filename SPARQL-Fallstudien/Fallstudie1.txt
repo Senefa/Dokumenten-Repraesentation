@@ -10,6 +10,6 @@ SELECT ?dokuName
 ?Person foaf:persNachname ?persNachname .
 ?Termin foaf:terZeitpunkt ?terZeitpunkt .
 FILTER regex( str(?persNachname), 'Tran' )
-FILTER regex( str(?terZeitpunkt), '2017-01-27' )
+FILTER regex( str(?terZeitpunkt), '2018-01-27' )
 }
 

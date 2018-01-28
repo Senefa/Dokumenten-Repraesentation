@@ -97,7 +97,7 @@ public class V5_OWLReaderAndUpdate {
 		} 
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(pServerURL , sQuery);
 		ResultSet resultSet = queryExecution.execSelect();
-		System.out.println(resultSet);
+		//System.out.println(resultSet);
 		System.out.println("Ergebnis:");
 		while (resultSet.hasNext() == true) {
 			QuerySolution querySolution = resultSet.nextSolution();

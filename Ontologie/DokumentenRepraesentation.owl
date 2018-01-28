@@ -898,6 +898,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Termin"/>
+        <TerminHatTeilnehmer rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Aaron_Humm"/>
+        <TerminHatTeilnehmer rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Jennifer_Tran"/>
+        <terName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gespraech10</terName>
+        <terZeitpunkt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-18T09:50:00</terZeitpunkt>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech2">
@@ -926,6 +938,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Termin"/>
+        <TerminGehoertZuVerwendung rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung5"/>
+        <TerminGehoertZuVerwendung rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung6"/>
+        <TerminHatTeilnehmer rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Haruki_Sato"/>
+        <TerminHatTeilnehmer rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Lisa_Meier"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Grafik -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Grafik">
@@ -942,6 +966,7 @@
         <PersonBearbeitetDokument rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Zwischenpraesentation"/>
         <PersonErstelltDokument rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Kostenaufstellung"/>
         <PersonNimmtTeilAnTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech3"/>
+        <PersonNimmtTeilAnTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech4"/>
         <persGeschlecht rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maennlich</persGeschlecht>
         <persMail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haruko.sato@starcars.com</persMail>
         <persNachname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sato</persNachname>
@@ -1054,6 +1079,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Meilenstein">
         <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Meilenstein"/>
         <DokumentGehoertZuVerwendung rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung1"/>
+        <DokumentGehoertZuVerwendung rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung6"/>
         <DokumentWirdBearbeitetVonPerson rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Jennifer_Tran"/>
         <DokumentWirdErstelltVonPerson rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Di_Cui"/>
         <dokuName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meilenstein2</dokuName>
@@ -1166,8 +1192,8 @@
         <DokumentHatDokumententyp rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Grafik"/>
         <DokumentWirdBearbeitetVonPerson rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Di_Cui"/>
         <DokumentWirdErstelltVonPerson rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Jennifer_Tran"/>
-        <dokuAenderungsdatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-24T12:00:00Z</dokuAenderungsdatum>
-        <dokuErstelldatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-10T09:00:00Z</dokuErstelldatum>
+        <dokuAenderungsdatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-24T12:00:00Z</dokuAenderungsdatum>
+        <dokuErstelldatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-20T09:00:00Z</dokuErstelldatum>
         <dokuName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML-Diagramm</dokuName>
         <dokuSpeicherort rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Users/IT-Projekt/Dokumente</dokuSpeicherort>
         <dokuVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dokuVersion>
@@ -1235,8 +1261,21 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung5">
         <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
         <VerwendungHatDokument rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Zwischenpraesentation"/>
-        <VerwendungHatStichwort rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Stichwort5"/>
-        <VerwendungHatTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech2"/>
+        <VerwendungHatPerson rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Lisa_Meier"/>
+        <VerwendungHatTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech4"/>
+        <verwZeitpunkt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-24T14:32:00Z</verwZeitpunkt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Verwendung"/>
+        <VerwendungHatDokument rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Meilenstein"/>
+        <VerwendungHatPerson rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Haruki_Sato"/>
+        <VerwendungHatTermin rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech4"/>
+        <verwZeitpunkt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-24T14:20:00Z</verwZeitpunkt>
     </owl:NamedIndividual>
     
 
