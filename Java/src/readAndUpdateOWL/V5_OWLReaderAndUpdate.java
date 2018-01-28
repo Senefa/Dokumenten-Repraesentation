@@ -103,8 +103,14 @@ public class V5_OWLReaderAndUpdate {
 			QuerySolution querySolution = resultSet.nextSolution();
 			for (int i = 0; i < resultSet.getResultVars().size(); i++) {
 				String result = resultSet.getResultVars().get(i);
-				String[] temp = querySolution.get(result).toString().split("#");
-				System.out.println(temp[1]);
+				if(querySolution.get(result).toString().contains("#")) {
+					String[] temp = querySolution.get(result).toString().split("#");
+					System.out.println(temp[1]);
+				}else {
+					String[] temp = querySolution.get(result).toString().split("#");
+					System.out.println(temp[0]);
+				}
+				
 			}
 		}
 		queryExecution.close();

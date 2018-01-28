@@ -11,7 +11,6 @@ foaf:terName "Gespraech10" ;
 foaf:terZeitpunkt "2017-01-27T09:15:00Z" ;
 foaf:TerminHatTeilnehmer "Aaron_Humm" ;
 foaf:TerminHatTeilnehmer "Jennifer_Tran" ;
-
 }
 
 
