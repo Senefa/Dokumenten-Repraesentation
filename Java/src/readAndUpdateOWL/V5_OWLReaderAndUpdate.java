@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.UUID;
 
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -117,41 +116,6 @@ public class V5_OWLReaderAndUpdate {
 		
 		
 	}
-	
-	/**
-	 * Gibt das Ergebnis auf die Abfrage in der eingelesene Ontologie zurueck.
-	 * 
-	 * @param pOWLPath  Pfad zur Ontologie in XML Format.
-	 * @param pSPARQLPath  Pfad zur SPARQL-Abfrage in ASCII Format.
-	 */
-	/*public static void printQuery(String pOWLPath, String pSPARQLPath) {
-		System.out.println("Methode Query");
-		String sQuery = readFile(pSPARQLPath);
-		if (sQuery.equals("")) {
-			return;
-		} 
-		OntModel ontologyModel = ModelFactory
-				.createOntologyModel(OntModelSpec.OWL_DL_MEM);
-		try {
-			ontologyModel.read(new FileInputStream(pOWLPath), null, "RDF/XML");
-			Query query = QueryFactory.create(sQuery);  
-			QueryExecution queryExecution = QueryExecutionFactory.create(query,
-					ontologyModel);
-			ResultSet resultSet = queryExecution.execSelect();
-			System.out.println("Ergebnis:");	
-			while (resultSet.hasNext() == true) {
-				QuerySolution querySolution = resultSet.nextSolution();
-				for (int i = 0; i < resultSet.getResultVars().size(); i++) {
-					String result = resultSet.getResultVars().get(i);
-					String[] temp = querySolution.get(result).toString().split("#");
-					System.out.println(temp[1]);
-				}
-			}
-			queryExecution.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}*/
 	
 	/**
 	 * Erweitert die Ontologie um weitere Instanzen 

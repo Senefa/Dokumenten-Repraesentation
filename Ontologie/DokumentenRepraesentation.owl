@@ -898,18 +898,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech10 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech10">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Termin"/>
-        <TerminHatTeilnehmer rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Aaron_Humm"/>
-        <TerminHatTeilnehmer rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Jennifer_Tran"/>
-        <terName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gespraech10</terName>
-        <terZeitpunkt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-18T09:50:00</terZeitpunkt>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Gespraech2">

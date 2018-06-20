@@ -35,5 +35,14 @@
 	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-3.6.0/lib/slf4j-log4j12-1.7.25.jar"/>
 	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-3.6.0/lib/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-3.6.0/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-delete"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-get"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-head"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-post"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-put"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-query"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-update"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/s-update-form"/>
+	<classpathentry kind="lib" path="/Users/jennifertran/Downloads/apache-jena-fuseki-3.6.0/bin/soh"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
