@@ -279,6 +279,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FileName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FileName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#File"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FileURL -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FileURL">
@@ -336,17 +344,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Name -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Company"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#File"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person">
@@ -366,6 +363,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#PersonLastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#PersonLastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Company"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#File"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project">
@@ -377,6 +385,14 @@
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ProjectID -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ProjectID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ProjectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ProjectName">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project"/>
     </owl:DatatypeProperty>
     
@@ -642,10 +658,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#CostPlan">
         <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ProjectControlling"/>
+        <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <FileCreationDate>19.06.2018</FileCreationDate>
         <FileURL>https://drive.google.com/open?id=17LFPYVxbBQK5Wdt5SrNgo3_iYxXJiXfXq6jYoLl8H4Y</FileURL>
         <Keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost; expenses; expense; costs;</Keyword>
-        <Name>costplan</Name>
+        <PersonLastName>costplan</PersonLastName>
     </owl:NamedIndividual>
     
 
@@ -725,7 +742,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Haruki_Moto">
         <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project_Staff"/>
         <Keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haruki; moto; japan;</Keyword>
-        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moto</Name>
+        <PersonLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moto</PersonLastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet">
+        <ProjectName>highnet</ProjectName>
     </owl:NamedIndividual>
     
 
