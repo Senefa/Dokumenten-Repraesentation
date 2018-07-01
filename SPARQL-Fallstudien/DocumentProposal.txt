@@ -1,0 +1,27 @@
+PREFIX asdf: <http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+SELECT ?FileName ?Category ?Editor ?URL ?ChangeDate
+WHERE { 
+
+?Instanzname rdf:type ?Category .
+?Category rdf:type owl:Class .
+   
+?Instanzname asdf:FileName ?FileName .
+?Instanzname asdf:URL ?URL .
+?Instanzname asdf:IsChangedBy ?Editor .
+?Instanzname asdf:LastChangeDate ?ChangeDate .
+FILTER regex( str(?FileName), "cost" )
+
+
+
+
+
+}
+
+

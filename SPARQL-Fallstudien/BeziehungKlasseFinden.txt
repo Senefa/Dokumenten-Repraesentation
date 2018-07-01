@@ -6,7 +6,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT *
 WHERE { 
-?x owl:ObjectProperty ?ObjectProperty .
+?x rdf:type ?ObjectProperty .
 ?Instanz asdf:Keyword ?Keyword .
 FILTER regex( str(?Keyword), "cost" ) 
 }
