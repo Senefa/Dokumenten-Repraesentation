@@ -6,20 +6,20 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 
-public class semantic {
+public class Semantic {
 	
 	
 	public static void main(String[] args) {
-		getSemantic(args[0]);		
+		getSemantic();		
 	}
 	
 	
 	
 	
-	public static String getSemantic(String chunk) {
-	//public static void getSemantic() {		
-		String keyword = chunk;
-		//String keyword = "cost" ;
+	//public static String getSemantic(String chunk) {
+	public static void getSemantic() {		
+		//String keyword = chunk;
+		String keyword = "cost" ;
 
 		String sQuery = 
 				"\n" + 
@@ -57,6 +57,7 @@ public class semantic {
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService("http://localhost:3030/ds" , sQuery);
 		
 		ResultSet resultSet = queryExecution.execSelect();		
+		
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		ResultSetFormatter.outputAsJSON(outputStream, resultSet);
 		
@@ -65,7 +66,7 @@ public class semantic {
 
 		queryExecution.close();
 		
-		return(json);
+		//return(json);
 	
 	}
 	

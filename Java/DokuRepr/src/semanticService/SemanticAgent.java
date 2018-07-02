@@ -29,7 +29,7 @@ public class SemanticAgent extends AbstractAgent{
 		 */
 		try {
 			AbstractInterestProfile ip = new SemanticChunksIP();
-			ip.add(new IsEventType("FeedbackEvent"));
+			ip.add(new IsEventType("SentenceEvent"));
 			this.add(ip);
 		
 		} catch (NoValidInterestProfileException e1) {

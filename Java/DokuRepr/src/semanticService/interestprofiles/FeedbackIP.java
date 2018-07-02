@@ -67,7 +67,7 @@ public class Semantic extends AbstractInterestProfile{
 		
 		try {
 			//Neue FeedbackEvent
-			this.getAgent().send(feedbackEvent, "FeedbackEvent");
+			this.getAgent().send(feedbackEvent, "SemanticChunks");
 			
 		} catch (NoValidEventException e) {
 			// TODO Auto-generated catch block
