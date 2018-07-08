@@ -7,6 +7,7 @@ public class protocolproposal {
 		 String participant2 = "vanessa";
 		 getQuery(participant1, participant2);
 	}
+	
 	public static void getQuery(String participant1, String participant2) {
 		
 		
