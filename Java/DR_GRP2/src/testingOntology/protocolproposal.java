@@ -10,9 +10,7 @@ public class protocolproposal {
 	
 	public static void getQuery(String participant1, String participant2) {
 		
-		
-
-				 
+						 
 		 String sQuery = "PREFIX asdf: <http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#>\n" + 
 		 		"PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n" + 
 		 		"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" + 
