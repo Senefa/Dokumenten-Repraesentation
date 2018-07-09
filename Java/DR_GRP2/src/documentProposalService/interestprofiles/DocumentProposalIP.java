@@ -52,7 +52,7 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 			}
 			System.out.println("OUTPUT ANSATZ "+outputEvent);
 		
-		//________________________________
+		//______________________________
 		
 		// Pushen eines Events
 			
