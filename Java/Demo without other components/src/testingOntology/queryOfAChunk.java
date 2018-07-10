@@ -13,8 +13,7 @@ public class queryOfAChunk {
 		String chunk = "cost";
 		getSemantic(chunk);
 	}
-	
-	
+
 	
 	public static String getSemantic(String chunk) {
 		System.out.println("Start der Semantic Suche");
