@@ -914,7 +914,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#JenniferTran"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
-        <DocumentType>table</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-30T12:13:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1qnx9aAr0wPt2uyFz-lH2hgLAs2NKuKoCc390BpO0beA</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change request</FileName>
@@ -1098,7 +1098,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#JenniferTran"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DokumentenRepräsentation"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage4"/>
-        <DocumentType>presentation</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presentation</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-21T11:59:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16nN9K0kFPBMPH0gEW9_FxSLKBlPO_KjGYXBkLG0dkdQ</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Final Presentation</FileName>
@@ -1373,7 +1373,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FlorianHahn"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DokumentenRepräsentation"/>
-        <DocumentType>table</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-26T16:28:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1Snm3DMUewieNAPDd03i-JpSilUoAtAulCihEnyd4_GQ</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milestone plan</FileName>
@@ -1394,6 +1394,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#RobertRapp"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage3"/>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-14T18:28:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1H7BVdxxDXe02WLreEV7rbztlasY5k-Oxcfp5KMcDlOA</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">note 1</FileName>
@@ -1414,6 +1415,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FiniaIgel"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DevelopmentProject"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage1"/>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-18T17:04:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1G5NnEAZP93vEvv2Sc5GHT_iBEVp0TIqqrZYbiQBIS3Y</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">note 2</FileName>
@@ -1434,6 +1436,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#AaronHumm"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DokumentenRepräsentation"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage1"/>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19T15:07:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">105ctYeg_0DucsTdrW1aAryfnwbQnSndYq2EdXiSPvMA</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">note 3</FileName>
@@ -1454,7 +1457,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#VanessaKeller"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DokumentenRepräsentation"/>
-        <DocumentType>text</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-01T08:10:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1PDUAs_K454eHoAdS8liT4JB-8ZqCwP2gdlocd4RRokI</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project contract</FileName>
@@ -1475,7 +1478,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#JenniferTran"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DevelopmentProject"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage3"/>
-        <DocumentType>table</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-08T09:46:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1C_O5eFRVEYvDB7UplmV0AD4jOYzP-GxBQ8xU5GAynpI</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project plan</FileName>
@@ -1495,6 +1498,7 @@
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DokumentenRepräsentation"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage3"/>
         <ProtocolBelongsTo rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Conversation1"/>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-12T13:00:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1_xbdVMUyoSZD1aRPJpy61czqQLNanDy7BnSF4prO8Xo</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protocol 1</FileName>
@@ -1514,6 +1518,7 @@
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#DevelopmentProject"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage2"/>
         <ProtocolBelongsTo rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Conversation2"/>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-16T12:09:13Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18hNK2txbvW5_nV2YbaoZa8EWrS-IXR_hR52nhobkzHk</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protocol 2</FileName>
@@ -1533,6 +1538,7 @@
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage3"/>
         <ProtocolBelongsTo rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Conversation3"/>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-09T11:00:08Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1IXaOF6wN1t9mXocmftpq4COQ5UJSzRc9bwgNCU2Pwyg</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protocol 3</FileName>
@@ -1595,7 +1601,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#LisaMeier"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage1"/>
-        <DocumentType>text</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-01T15:30:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1686MqSYEHJVixIJMFoDw4_tr8IlCkQ4ZFXPOPCsjj7Y</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">risk analysis</FileName>
@@ -1696,7 +1702,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#VanessaKeller"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage2"/>
-        <DocumentType>text</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-06T09:09:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1QFKrdAlyiL9kJC5Tof4_T1J0w4bu0Du8BFYq8_-ZaXM</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swot analysis</FileName>
@@ -1717,7 +1723,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#FiniaIgel"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#HighNet"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage2"/>
-        <DocumentType>table</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T17:56:00Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1XRXE9kd_Uy4kpyLqBQKx2abGKlQcFB_stTjo85JJMS8</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to do list</FileName>
