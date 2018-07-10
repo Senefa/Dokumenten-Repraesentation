@@ -2,17 +2,17 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <parent>
+<!--  <parent>
     <groupId>developmentLab</groupId>
     <artifactId>Event-Based-Integration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-  </parent>
+  </parent> -->
   <groupId>developmentLab</groupId>
   <artifactId>DR_GRP2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>DR_GRP2</name>
   <url>http://maven.apache.org</url>
-  <properties>
+ <!-- <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
@@ -22,7 +22,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-     <!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
+     https://mvnrepository.com/artifact/org.apache.jena/jena-arq
 	<dependency>
 	    <groupId>org.apache.jena</groupId>
 	    <artifactId>jena-arq</artifactId>
@@ -64,5 +64,12 @@
     <artifactId>json</artifactId> 
     <version>20180130</version>     
 </dependency>
-</dependencies>
+https://mvnrepository.com/artifact/org.apache.jena/jena-fuseki-embedded
+<dependency>
+    <groupId>org.apache.jena</groupId>
+    <artifactId>jena-fuseki-embedded</artifactId>
+    <version>3.8.0</version>
+    <scope>test</scope>
+</dependency>
+</dependencies> -->
 </project>
