@@ -105,10 +105,13 @@ private static final String CLIENT_SECRET_DIR = "client_secret.json";
 private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws Exception {
     // Load client secrets.
     //InputStream in = saveProtocol.class.getResourceAsStream(CLIENT_SECRET_DIR);
+    // client_secret.json wurde nicht hochgeladen, da es ein privaten Schlüssel beinhaltet!
     InputStream in = new FileInputStream(new java.io.File("client_secret.json"));
+    //Zur Überprüfung ob es ein NullPointE. wirft
     System.out.println(in);
     System.out.println(HTTP_TRANSPORT);
-    System.out.println(new java.io.File("client_secret.json").exists());
+
+    //System.out.println(new java.io.File("client_secret.json").exists());
     GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
     
     // Build flow and trigger user authorization request.
