@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Model"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.Dataset"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.ModelFactory"/>
+<fullyQualifiedTypeName name="org.apache.jena.sparql.core.DatasetImpl"/>
+<fullyQualifiedTypeName name="org.apache.jena.fuseki.embedded.FusekiServer"/>
+</qualifiedTypeNameHistroy>
