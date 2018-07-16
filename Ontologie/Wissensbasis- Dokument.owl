@@ -681,6 +681,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#EcosystemBosch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#EcosystemBosch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ITProject"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#File -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#File"/>
@@ -733,6 +741,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Produktmanager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Produktmanager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Project"/>
@@ -779,10 +795,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Qualitätsmanagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Qualitätsmanagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#RquirementsEngineer"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ReportingDocument -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#ReportingDocument">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#RquirementsEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#RquirementsEngineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Person"/>
     </owl:Class>
     
 
@@ -841,6 +873,14 @@
         <Keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concept; description; basis;</Keyword>
         <LastChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-22T13:09:00Z</LastChangeDate>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/1TWOWMMUa6GarEyETA7ccvMdFZrqSpEEGmj148x-b124/edit</URL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Bosch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Bosch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Company"/>
     </owl:NamedIndividual>
     
 
@@ -1019,6 +1059,14 @@
         <Keyword>cost; costs; expense; expenses; statement</Keyword>
         <LastChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-23T09:10:00Z</LastChangeDate>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/12ctjkJNaTcMIY-JJAf-bdW5FkFUCudFwroyG-SNyx_4/edit</URL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Daimler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Daimler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Company"/>
     </owl:NamedIndividual>
     
 
@@ -1710,6 +1758,14 @@
         <Keyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strength; weakness; opportunity; threat; analysis; swot; svot;</Keyword>
         <LastChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-18T19:30:00Z</LastChangeDate>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/1QFKrdAlyiL9kJC5Tof4_T1J0w4bu0Du8BFYq8_-ZaXM/edit</URL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#TimoMueller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#TimoMueller">
+        <EMail>timo.mueller@gmail.com</EMail>
     </owl:NamedIndividual>
     
 
