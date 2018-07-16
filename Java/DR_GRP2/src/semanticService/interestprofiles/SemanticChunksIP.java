@@ -22,6 +22,13 @@ import eventprocessing.utils.factory.FactoryValues;
 import eventprocessing.utils.factory.LoggerFactory;
 import eventprocessing.utils.model.EventUtils;
 
+
+
+/**
+ * @author Jennifer Tran, Vanessa Keller, Di Cui, Aaron Humm, Finia Igel.
+ * 
+ */
+
 public class SemanticChunksIP extends AbstractInterestProfile{
 
 	private static AbstractFactory eventFactory = FactoryProducer.getFactory(FactoryValues.INSTANCE.getEventFactory());
@@ -37,7 +44,6 @@ public class SemanticChunksIP extends AbstractInterestProfile{
 	public void doOnReceive(AbstractEvent event) {		
 		System.out.println("In IP von DR!!!!");
 		System.out.println("Event erhalten: " + event);
-		System.out.println("Hallo neu");
 		//Chunker Objekt von Token abfangen
 		ArrayList<Object> chunkslist = (ArrayList<Object>)	EventUtils.findPropertyByKey(event, "Chunks").getValue();
 		Chunker chunkerObject = new Chunker();
@@ -88,6 +94,15 @@ public class SemanticChunksIP extends AbstractInterestProfile{
 		}
 	}
 
+	
+	
+	/**
+	 * Abfrage der SPARQL-Abfrage in der Ontologie.
+	 * 
+	 * @param chunk.
+	 * @return Gibt die Antwort aus der SPARQL-Abfrage in der Ontologie als String zurueck.
+	 * 		
+	 */
 	public static String getSemantic(String chunk) {
 		
 		String keyword = chunk.toLowerCase();
