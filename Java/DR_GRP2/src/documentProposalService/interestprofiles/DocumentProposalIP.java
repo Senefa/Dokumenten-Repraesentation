@@ -43,7 +43,7 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 		/**
 	 * Liest das abgefangene Event der EBI ein.
 	 * 
-	 * @param event Dokument der abgespeichert werden soll.
+	 * @param event Dokument das vorgeschlagen werden soll.
 	 * 
 	 */
 
