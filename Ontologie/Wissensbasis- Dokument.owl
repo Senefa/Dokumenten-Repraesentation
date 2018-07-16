@@ -2136,7 +2136,7 @@
         <IsChangedBy rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#LisaMeier"/>
         <IsCreatedFor rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#MicrosoftProject"/>
         <IsUsedIn rdf:resource="http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#Usage3"/>
-        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tabel</DocumentType>
+        <DocumentType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table</DocumentType>
         <FileCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-17T18:47:23Z</FileCreationDate>
         <FileID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1QZybmw_TPLXa_deavXbNGhIeOFzYBu8_HIpsfCxKaIk</FileID>
         <FileName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test docu</FileName>
