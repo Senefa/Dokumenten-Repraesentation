@@ -27,17 +27,33 @@ import eventprocessing.utils.factory.LoggerFactory;
 import eventprocessing.utils.model.EventUtils;
 import eventprocessing.utils.model.OWLResultUtils;
 
+/**
+ * @author Jennifer Tran, Vanessa Keller, Di Cui, Aaron Humm, Finia Igel.
+ * 
+ */
+
+
 public class DocumentProposalIP extends AbstractInterestProfile {
 	
 	private static AbstractFactory eventFactory = FactoryProducer.getFactory(FactoryValues.INSTANCE.getEventFactory());
 	private static final long serialVersionUID = -6108185466150892913L;
 	private static Logger LOGGER = LoggerFactory.getLogger(DocumentProposalIP.class);
 
+	
+		/**
+	 * Liest das abgefangene Event der EBI ein.
+	 * 
+	 * @param event Dokument der abgespeichert werden soll.
+	 * 
+	 */
 
 	@Override
 	protected void doOnReceive(AbstractEvent event) {
 		// TODO Auto-generated method stub
+		// Nur zur Info: Das übergebene event
 		System.out.println("in IP von Dr mit dem Event: " + event);
+		
+		// Baut die SPARQL-Abfrage aus Bausteinen zusammen und frägt diese in der Ontologie ab.
 		String result = getModul(event);
 
 		//_________________________________
@@ -54,10 +70,10 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 		
 		//__________________________
 		
-		// Pushen eines Events
+		// Pushen eines Events.
 			
 				try {
-					//Neue FeedbackEvent
+					//Neue FeedbackEvent.
 					System.out.println("Dieses Event wird raus geschickt: " + outputEvent);
 					this.getAgent().send(outputEvent, "DocProposal");
 					
@@ -71,8 +87,9 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 		
 	}
 
-	// DocProposalEvent UNSER CODE
 	
+	
+	//sQueryAnfang: Dieser Anfang wird in jeder SPARQL-Abfrage benötigt.
 	static String sQueryAnfang = "	\n" + 
 			"\n" + 
 			"PREFIX asdf: <http://www.semanticweb.org/jennifertran/ontologies/2018/0/dokumentenRepraesentation#>\n" + 
@@ -88,7 +105,9 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 			"WHERE {\n" + 
 			"?Document asdf:HasAuthor ?Author.\n" + 
 			"?Document asdf:IsChangedBy ?Editor.\n";
-			
+	
+	
+	//sQueryEnde: Dieses Ende wird in jeder SPARQL-Abfrage benötigt	.	
 	static String sQueryEnde =	"	\n" + 
 			"?Document asdf:FileName ?FileName ; \n" + 
 			"			asdf:DocumentType ?DocumentType ;\n"+
@@ -100,6 +119,8 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 			" }\n" + 
 			"ORDER BY DESC(?LastChangeDate)";
 	
+	
+	// addPerson wird nur benötigt, wenn eine Person übergeben wurde.
 	public static String addPerson(String keyword) {
 		String sPerson = "{?Author asdf:Keyword ?KeywordAuthor . "
 				+ "FILTER regex( str(?KeywordAuthor), \""
@@ -111,6 +132,8 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 		return sPerson;
 	}
 	
+	
+	// addProject wird nur benötigt, wenn ein Projekt übergeben wurde. 
 	public static String addProject(String keyword) {
 		String sProject = "?Document asdf:IsCreatedFor ?Project.\n" + 
 				"?Project asdf:Keyword ?KeywordProject.\n" + 
@@ -121,6 +144,7 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 	}
 	
 	
+	// add Project wird nur benötigt, wenn es mindestens ein Keyword übergeben wird.
 	public static String addKeyword(String keyword) {
 		String sKeyword = "?Document asdf:Keyword ?Keyword.\n" + 
 				" FILTER regex( str(?Keyword), \""
@@ -128,27 +152,31 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 				+ "\") .";
 		return sKeyword;
 	}
+	
+	
+	/**
+	 * Erstellt die SPARQL-Abfrage aus Bausteinen und gibt diesen als String zurueck.
+	 * 
+	 * @param event mit den nötigen Bausteinen.
+	 * @return Gibt die Antwort aus der SPARQL-Abfrage in der Ontologie als String zurueck.
+	 * 		
+	 */
 
 	public static String getModul(AbstractEvent event) {
 		 String sFinishQuery = sQueryAnfang + "";
-		// AbstractEvent event2 = eventFactory.createEvent("AtomicEvent");
 		 Property<ArrayList<AbstractEvent>> keywords = (Property<ArrayList<AbstractEvent>>) EventUtils.findPropertyByKey(event, "keyword");
 		 
-		 
-		 
+	 
 		 if(EventUtils.findPropertyByKey(event, "project") != null) {
-			 //event2.add(new Property<String>((String) event.getValueByKey("project")));
 			 sFinishQuery = sFinishQuery + addProject((String) event.getValueByKey("project"));
 		 }
 		 
 		 if(EventUtils.findPropertyByKey(event, "person") != null) {
-			 //event2.add(new Property<String>((String) event.getValueByKey("project")));
 			 sFinishQuery = sFinishQuery + addProject((String) event.getValueByKey("person"));
 		 }
 		 
 		 if(EventUtils.findPropertyByKey(event, "keywords") != null) {
 			 for(int i = 0; i < keywords.getValue().size(); i++) {
-				//event2.add(new Property<String>(keywords.getValue().get(i).toString())); 
 				 sFinishQuery = sFinishQuery + addKeyword(keywords.getValue().get(i).toString());
 			 }
 		 }
@@ -157,14 +185,22 @@ public class DocumentProposalIP extends AbstractInterestProfile {
 		 return getProposal(sFinishQuery);
 	}
 	
+	
+	
+		/**
+	 * Abfrage der SPARQL-Abfrage in der Ontologie.
+	 * 
+	 * @param sQuery SPARQL-Abfrage.
+	 * @return Gibt die Antwort aus der SPARQL-Abfrage in der Ontologie als String zurueck.
+	 * 		
+	 */
+	
+	
 	public static String getProposal(String sQuery) {
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService("http://localhost:3030/ds" , sQuery);
-		
 		ResultSet resultSet = queryExecution.execSelect();		
-		
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		ResultSetFormatter.outputAsJSON(outputStream, resultSet);
-		
 		String json = new String(outputStream.toByteArray());
 		System.out.println(json);
 		queryExecution.close();
