@@ -1,11 +1,17 @@
-<p>The Java code in the src folder is devided in three services:</p>
+<p><strong>The Java code in the src folder is devided in three services:</strong></p>
 <ul>
-<li><strong>docProposalService</strong><br />This service contains the DocumentProposalAgent and the two&nbsp; InterestProfiles DocumentProposalIP and ProtocolProposalIP. The task of the DocumentProposalAgent is to find documents or protocol depending on the incoming tokens, which then appear in the User Interface.</li>
-<li><strong>saveProposalService</strong><br />This service contains the SaveDocumentAgent and the SaveDocument Interst Profile. The task of the SaveDocumentAgent has the task to save a new protocol after a video conference session.</li>
-<li><strong>semanticService</strong><br />This service contains the SemanticAgent and the SemanticChunk Interest Profile. The SemanticAgent has the task to find semantic information from the ontology for the incoming chunks.</li>
+<li style="text-align: justify;"><strong>docProposalService</strong><br />This service contains the DocumentProposalAgent and the two&nbsp; InterestProfiles DocumentProposalIP and ProtocolProposalIP. The task of the DocumentProposalAgent is to find documents or protocol depending on the incoming tokens, which then appear in the User Interface.</li>
 </ul>
-
-The table below gives an overview over all agents with the according topics and events, depending if these are subscribed or published by another group. 
+<p>&nbsp;</p>
+<ul>
+<li style="text-align: justify;"><strong>saveProposalService</strong><br />This service contains the SaveDocumentAgent and the SaveDocument Interst Profile. The task of the SaveDocumentAgent has the task to save a new protocol after a video conference session.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="text-align: justify;"><strong>semanticService</strong><br />This service contains the SemanticAgent and the SemanticChunk Interest Profile. The SemanticAgent has the task to find semantic information from the ontology for the incoming chunks.</li>
+</ul>
+<p>&nbsp;</p>
+<p style="text-align: justify;">The table below gives an overview over all agents with the according topics and events, depending if these are subscribed or published by another group.</p>
 <table>
 <tbody>
 <tr>
@@ -28,7 +34,7 @@ The table below gives an overview over all agents with the according topics and 
 <tr>
 <td>
 <p>DocProposalAgent/</p>
-<p><strong>DocProposalInterestProfile</strong></p>
+<p>DocProposalInterestProfile</p>
 </td>
 <td>DocRequest</td>
 <td>DocRequestEvent</td>
@@ -38,7 +44,7 @@ The table below gives an overview over all agents with the according topics and 
 <tr>
 <td>
 <p>DocProposalAgent/</p>
-<p><strong>ProProposalInterestProfile</strong></p>
+<p>ProProposalInterestProfile</p>
 </td>
 <td>DocRequest</td>
 <td>DocRequestEvent</td>
