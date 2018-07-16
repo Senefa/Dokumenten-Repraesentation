@@ -1,5 +1,5 @@
 
-The folder Java contains three important subprojects:
+**The folder Java contains three important subprojects:**
 
 	· StartFuseki: This folder contains the code which is necessary that the ontology will be uploaded on the Fuseki SPARQL server, so that queries can be executed on the ontology.
 
