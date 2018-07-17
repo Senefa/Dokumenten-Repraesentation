@@ -11,18 +11,18 @@
 <p>In the course of the project there were some approaches to modeling an ontology. The final version is shown as a class diagram in the image placed in the order. The classes up to and including the second level, the relationships in both directions and the respective attributes are mapped.</p>
 
 <h2 style="color: #2e6c80;">&nbsp;</h2>
-<h3 style="color: #2e6c80;"><span style="color: #000000;">Beispiels&auml;tze f&uuml;r die Live-Demo</span></h3>
+<h3 style="color: #2e6c80;"><span style="color: #000000;">Sample sentences for the live demo </span></h3>
 <table>
 <tbody>
 <tr>
 <td>
-<p><strong>Beispiel Satz</strong></p>
+<p><strong>Sentence Example</strong></p>
 </td>
 <td>
-<p><strong>Dokumente, die theoretisch angezeigt werden m&uuml;ssten</strong></p>
+<p><strong>Documents that should theoretically be displayed </strong></p>
 </td>
 <td>
-<p><strong>Auf der basis von folgenden chunks</strong></p>
+<p><strong>Based on the following chunks</strong></p>
 </td>
 </tr>
 <tr>
