@@ -6,8 +6,18 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.sparql.core.DatasetImpl;
 
+/**
+ * @author Robert Rapp, Jennifer Tran, Vanessa Keller.
+ * 
+ */
+
 public class StartJenaFuseki {
 
+	/**
+	 * Speichert die Ontologie auf den lokalen Server und startet diesen.
+	 * 
+	 */
+	
 	public static void main(String[] args) {
 		
 		//source: https://jena.apache.org/documentation/fuseki2/fuseki-run.html
