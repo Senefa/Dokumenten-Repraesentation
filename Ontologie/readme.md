@@ -9,8 +9,6 @@
 <p>&nbsp;</p>
 <h4>Darstellung der Ontologie in einem Klassendiagramm</h4>
 <p>Im Laufe des Projektes gab es einige Ans&auml;tze eine Ontologie zu Modellieren. Die finale Version ist als Klassendiagramm in dem im Order Abgelegten Bild zu sehen. Dabei sind die Klassen bis inklusive der zweiten Ebene, die Beziehungen in jeweils beide Richtungen und die jeweiligen Attribute abgebildet.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-<h2 style="color: #2e6c80;">&nbsp;</h2>
-<p><strong>&nbsp;</strong></p>
 
 <h2 style="color: #2e6c80;">&nbsp;</h2>
 <h3 style="color: #2e6c80;"><span style="color: #000000;">Beispiels&auml;tze f&uuml;r die Live-Demo</span></h3>
