@@ -1,8 +1,8 @@
-<h2 style="color: #5e9ca0;"><span style="color: #000000;"><strong>Ontologie</strong></span></h2>
-<p>Ontologien, auch Wissensbasis genannt, spielen heutzutage eine zunehmend wichtige Rolle im Fortschritt des Semantic Webs, speziell in der Unterst&uuml;tzung der Informationsintegration. Die meisten Wissensbasen heutzutage decken spezifische Domainen ab, so auch die Ontologie zur Dokumentenrepr&auml;sentation.</p>
-<p>Laut Thilo Koegst hat eine Ontologie Eigenschaften von Datenbanken, Softwarecode und Modellen. Denn zum einen kann eine Ontologie wie eine Datenbank genutz werden, da Abfragen ausgef&uuml;hrt werden k&ouml;nnen. Allerdings k&ouml;nnen mithilfe von Triples weit komplexere Aussagen beschrieben werden als in normalen Datenbanken.</p>
-<p>Zum Anderen &auml;hnelt eine Ontologie einer Programmiersprache, da sie auch formal dargestellt werden kann und von maschinen lesbar ist. Allerdings, beschreiben Ontologien keine Prozeduren sondern nur deklarative Aussagen.</p>
-<p>Als letztes werden Ontologien mit Modellen verglichen, und in der Tat handelt es sich bei Ontologien um formale, deklarative Modelle einer Dom&auml;ne und ebenalls die Entwicklung ist sehr &auml;hnlich. Allerdings ist es bei komplexen Ontologien, mit vielen Begriffen die graphische Darstellung schwierig und un&uuml;bersichtlich.</p>
+<h2>Ontology</h2>
+<p>Ontologies, also known as the knowledge base, are playing an increasingly important role in the progress of the Semantic Web, especially in supporting information integration. Most knowledge bases today cover specific domains, including ontology for document representation.</p>
+<p>According to Thilo Koegst, an ontology has properties of databases, software code and models. On the one hand, an ontology can be used like a database, since queries can be executed. However, triples can be used to describe much more complex statements than in normal databases.</p>
+<p>On the other hand, an ontology resembles a programming language, since it can also be displayed formally and is readable by machines. However, ontologies do not describe procedures but only declarative statements.</p>
+<p>Finally, ontologies are compared with models, and indeed ontologies are formal, declarative models of a domain and the development is very similar. However, with complex ontologies, with many terms the graphical representation is difficult and confusing.</p>
 <p>&nbsp;</p>
 <h4>Structure of ontology</h4>
 <p>Figure 1 shows the class hierarchy of the ontology, Figure 2 shows a list of the relationships that exist between the classes. Figure 3 shows a list of attributes describing the classes.</p>
