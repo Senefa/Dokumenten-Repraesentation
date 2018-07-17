@@ -14,12 +14,12 @@ import eventprocessing.agent.NoValidTargetTopicException;
 import eventprocessing.agent.interestprofile.AbstractInterestProfile;
 import eventprocessing.event.AbstractEvent;
 import eventprocessing.event.Property;
+import eventprocessing.utils.TimeUtils;
 import eventprocessing.utils.factory.AbstractFactory;
 import eventprocessing.utils.factory.FactoryProducer;
 import eventprocessing.utils.factory.FactoryValues;
 import eventprocessing.utils.factory.LoggerFactory;
 import eventprocessing.utils.model.EventUtils;
-
 
 /**
  * @author Jennifer Tran, Vanessa Keller, Di Cui, Aaron Humm, Finia Igel.
@@ -39,11 +39,9 @@ public class ProtocolProposalIP extends AbstractInterestProfile{
 	 */
 
 	
-	protected void doOnReceive(AbstractEvent event) {
-		// TODO Auto-generated method stub
-
+	protected void doOnReceive(AbstractEvent event) { System.out.println(this.getClass().getSimpleName() + " : Event angekommen "+event.getType()+" - " + TimeUtils.getCurrentTime());
+		// Aufruf der Methode getQuery.
 		getQuery(event);
-		
 		// Pushen eines Events.
 				AbstractEvent proProposalEvent = eventFactory.createEvent("AtomicEvent");
 				proProposalEvent.setType("DocProposalEvent");
@@ -69,8 +67,10 @@ public class ProtocolProposalIP extends AbstractInterestProfile{
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+		
 	}
 
+	
 	/**
 	 * Erstellt die SPARQL-Abfrage aus Bausteinen.
 	 * 
@@ -78,6 +78,7 @@ public class ProtocolProposalIP extends AbstractInterestProfile{
 	 * @return Gibt die Antwort aus der SPARQL-Abfrage in der Ontologie als String zurueck.
 	 * 		
 	 */
+
 	public static String getQuery(AbstractEvent event) {
 		
 		 String participant1 = null;
@@ -126,7 +127,6 @@ public class ProtocolProposalIP extends AbstractInterestProfile{
 		 		"ORDER BY DESC(?LastChangeDate)";
 		 
 		return getProposal(sQuery);
-		
 	}
 	
 	
