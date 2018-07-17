@@ -13,12 +13,20 @@ import org.apache.jena.query.ResultSetFormatter;
 
 public class queryOfAChunk {
 
+	// Programmstart
+	
 	public static void main(String[] args) {
 		String chunk = "cost";
 		getSemantic(chunk);
 	}
 	
-	
+		/**
+	 * Erstellt die SPARQL-Abfrage aus Bausteinen.
+	 * 
+	 * @param chunk von der ST.
+	 * @return Gibt die Antwort aus der SPARQL-Abfrage in der Ontologie als String zurueck.
+	 * 		
+	 */
 	
 	public static String getSemantic(String chunk) {
 		System.out.println("Start der Semantic Suche");
