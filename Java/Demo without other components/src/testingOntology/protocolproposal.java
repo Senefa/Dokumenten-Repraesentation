@@ -5,13 +5,22 @@
 
 public class protocolproposal {
 	
-
+// Programmstart
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//vordefinierte Variablen zum testen.
 		 String participant1 = "jennifer";
 		 String participant2 = "vanessa";
 		 getQuery(participant1, participant2);
 	}
+	
+	
+	/**
+	 * Erstellt die SPARQL-Abfrage mit den festen Variablen und frägt die Ontolige ab und gibt das Ergebnis in der Konsole aus.
+	 * 
+	 * @param participant1, participant2 sind die Teilnehmer des Gespräches.
+	 * 		
+	 */
 	
 	public static void getQuery(String participant1, String participant2) {
 		
