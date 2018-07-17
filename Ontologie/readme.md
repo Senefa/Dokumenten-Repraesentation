@@ -3,19 +3,16 @@
 <p>Laut Thilo Koegst hat eine Ontologie Eigenschaften von Datenbanken, Softwarecode und Modellen. Denn zum einen kann eine Ontologie wie eine Datenbank genutz werden, da Abfragen ausgef&uuml;hrt werden k&ouml;nnen. Allerdings k&ouml;nnen mithilfe von Triples weit komplexere Aussagen beschrieben werden als in normalen Datenbanken.</p>
 <p>Zum Anderen &auml;hnelt eine Ontologie einer Programmiersprache, da sie auch formal dargestellt werden kann und von maschinen lesbar ist. Allerdings, beschreiben Ontologien keine Prozeduren sondern nur deklarative Aussagen.</p>
 <p>Als letztes werden Ontologien mit Modellen verglichen, und in der Tat handelt es sich bei Ontologien um formale, deklarative Modelle einer Dom&auml;ne und ebenalls die Entwicklung ist sehr &auml;hnlich. Allerdings ist es bei komplexen Ontologien, mit vielen Begriffen die graphische Darstellung schwierig und un&uuml;bersichtlich.</p>
-
 <p>&nbsp;</p>
 <h4>Aufbau der Ontologie</h4>
 <p>Abbildung 1 zeigt die Klassenhierarchie der Ontologie, Abbildung 2 zeigt eine Liste der Beziehungen, die es zwischen den Klassen gibt. Abbildung 3 zeigt eine Liste der Attribute, die die Klassen beschreiben.</p>
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
 <h4>Darstellung der Ontologie in einem Klassendiagramm</h4>
 <p>Im Laufe des Projektes gab es einige Ans&auml;tze eine Ontologie zu Modellieren. Die finale Version ist als Klassendiagramm in dem im Order Abgelegten Bild zu sehen. Dabei sind die Klassen bis inklusive der zweiten Ebene, die Beziehungen in jeweils beide Richtungen und die jeweiligen Attribute abgebildet.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
 <h2 style="color: #2e6c80;">&nbsp;</h2>
 <p>&nbsp;</p>
 <p><strong>&nbsp;</strong></p>
-
 
 <h2 style="color: #2e6c80;">&nbsp;</h2>
 <h3 style="color: #2e6c80;"><span style="color: #000000;">Beispiels&auml;tze f&uuml;r die Live-Demo</span></h3>
