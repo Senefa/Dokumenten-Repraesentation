@@ -6,6 +6,10 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 
+/**
+ * @author Jennifer Tran, Vanessa Keller, Di Cui, Aaron Humm, Finia Igel.
+ * 
+ */
 
 public class queryOfAChunk {
 
