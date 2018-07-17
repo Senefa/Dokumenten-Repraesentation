@@ -4,11 +4,11 @@
 <p>Zum Anderen &auml;hnelt eine Ontologie einer Programmiersprache, da sie auch formal dargestellt werden kann und von maschinen lesbar ist. Allerdings, beschreiben Ontologien keine Prozeduren sondern nur deklarative Aussagen.</p>
 <p>Als letztes werden Ontologien mit Modellen verglichen, und in der Tat handelt es sich bei Ontologien um formale, deklarative Modelle einer Dom&auml;ne und ebenalls die Entwicklung ist sehr &auml;hnlich. Allerdings ist es bei komplexen Ontologien, mit vielen Begriffen die graphische Darstellung schwierig und un&uuml;bersichtlich.</p>
 <p>&nbsp;</p>
-<h4>Aufbau der Ontologie</h4>
-<p>Abbildung 1 zeigt die Klassenhierarchie der Ontologie, Abbildung 2 zeigt eine Liste der Beziehungen, die es zwischen den Klassen gibt. Abbildung 3 zeigt eine Liste der Attribute, die die Klassen beschreiben.</p>
+<h4>Structure of ontology</h4>
+<p>Figure 1 shows the class hierarchy of the ontology, Figure 2 shows a list of the relationships that exist between the classes. Figure 3 shows a list of attributes describing the classes.</p>
 <p>&nbsp;</p>
-<h4>Darstellung der Ontologie in einem Klassendiagramm</h4>
-<p>Im Laufe des Projektes gab es einige Ans&auml;tze eine Ontologie zu Modellieren. Die finale Version ist als Klassendiagramm in dem im Order Abgelegten Bild zu sehen. Dabei sind die Klassen bis inklusive der zweiten Ebene, die Beziehungen in jeweils beide Richtungen und die jeweiligen Attribute abgebildet.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<h4>Representation of ontology in a class diagram</h4>
+<p>In the course of the project there were some approaches to modeling an ontology. The final version is shown as a class diagram in the image placed in the order. The classes up to and including the second level, the relationships in both directions and the respective attributes are mapped.</p>
 
 <h2 style="color: #2e6c80;">&nbsp;</h2>
 <h3 style="color: #2e6c80;"><span style="color: #000000;">Beispiels&auml;tze f&uuml;r die Live-Demo</span></h3>
