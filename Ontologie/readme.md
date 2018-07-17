@@ -5,7 +5,7 @@
 <p>Finally, ontologies are compared with models, and indeed ontologies are formal, declarative models of a domain and the development is very similar. However, with complex ontologies, with many terms the graphical representation is difficult and confusing.</p>
 <p>&nbsp;</p>
 <h4>Structure of ontology</h4>
-<p>Figure 1 shows the class hierarchy of the ontology, Figure 2 shows a list of the relationships that exist between the classes. Figure 3 shows a list of attributes describing the classes.</p>
+<p>Picture 1 shows the class hierarchy of the ontology, Picture 2 shows a list of the relationships that exist between the classes. Picture 3 shows a list of attributes describing the classes.</p>
 <p>&nbsp;</p>
 <h4>Representation of ontology in a class diagram</h4>
 <p>In the course of the project there were some approaches to modeling an ontology. The final version is shown as a class diagram in the image placed in the order. The classes up to and including the second level, the relationships in both directions and the respective attributes are mapped.</p>
